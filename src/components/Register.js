@@ -12,7 +12,7 @@ export const Register = () => {
     const onFinish = async (values) => {
         setLoading(true)
         try {
-            await axios.post("https://mern-crud-backend-qkjh.onrender.comregister", values)
+            await axios.post("https://mern-crud-backend-qkjh.onrender.com/register", values)
             setLoading(false)
             message.success("registration successfull")
         } catch (error) {

@@ -12,7 +12,7 @@ export const Login = () => {
     const onFinish = async (values) => {
         setLoading(true)
         try {
-            const user = await axios.post("https://mern-crud-backend-qkjh.onrender.comlogin", values)
+            const user = await axios.post("https://mern-crud-backend-qkjh.onrender.com/login", values)
             message.success("Login successfully")
             localStorage.setItem("mern-crud-user", JSON.stringify(user.data))
             setLoading(false)
